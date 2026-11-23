@@ -73,8 +73,18 @@ Phần mềm CAM có thể tự sắp lại đường chạy dao, hãy đặt th
 Khung tổng hợp ghi số ván đã xếp và **số ván tối thiểu theo lý thuyết** (tính theo diện tích và các tấm
 quá nửa ván). Kết quả không thể ít hơn con số này; thực tế thường hơn 1–2 ván vì khe cắt và cắt suốt.
 
-Mức **Kỹ** tìm lâu hơn (khoảng 12 giây mỗi vật liệu) và có thể bớt ván với đơn hàng lớn. Chống bay vẫn
+Mức **Kỹ** tìm lâu hơn (khoảng 20 giây mỗi vật liệu) và có thể bớt ván với đơn hàng lớn. Chống bay vẫn
 chạy sau khi số ván đã chốt, nên không bao giờ làm tăng số ván.
+
+Cả hai mức đều thử xếp theo dải (hợp với tấm cùng cỡ), rồi thử dỡ ván thưa nhất vào khe các ván khác.
+Không bớt được ván thì tấm được dồn về các ván đầu, phần thừa gom về ván cuối thành đầu thừa lớn.
+Mỗi màu và độ dày là một nhóm riêng, xếp trên ván riêng.
+
+## Lớp đường dao trên sơ đồ
+
+Sơ đồ hiện mọi nét gia công với đúng tên lớp sẽ có trong DXF, mỗi lớp một màu. Bấm vào tên lớp ở hàng
+"Lớp đường dao" để ẩn hoặc hiện. Nét liền là mặt ngửa, nét đứt là mặt sau, tô trắng là khoan hoặc khoét thủng.
+Khi **Vẽ vào model**, mỗi lớp nằm trên một tag cùng tên (mặt sau có tiền tố `MAT_SAU_`).
 
 ## Cắt lật tấm
 
