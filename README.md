@@ -2,7 +2,7 @@
 
 Extension nesting tấm ván cho SketchUp, tập trung vào **chống bay ván khi cắt CNC**.
 
-> Bản 0.1 là bản thử nghiệm. Hãy mở DXF trong phần mềm CAM và cắt thử một tấm trước khi sản xuất.
+> Đây là bản thử nghiệm. Hãy mở DXF trong phần mềm CAM và cắt thử một tấm trước khi sản xuất.
 
 ## Cài đặt
 
@@ -40,6 +40,20 @@ Tên chỉ là mã số và không có texture sẽ bị coi là đơn sắc, **
 
 Tấm tô đỏ là tấm nhỏ không thể đưa vào trong: nên thêm tab hoặc chừa da khi cắt.
 
+## Model vẽ bằng ABF
+
+Xếp Ván đọc thẳng tấm ABF, không cần dán tem lại:
+
+- Chiều chữ trên tem ABF là chiều vân, mặt có tem đặt ngửa khi cắt.
+- Lỗ khoan, chén bản lề, rãnh, hạ nền nằm trên mặt tấm được đưa vào DXF với **đúng tên lớp ABF**
+  (ví dụ `ABF-D15`, `ABF-D35`, `HANEN7`). Độ sâu nằm trong thiết lập ABF, không nằm trong model,
+  nên hãy gán dao và độ sâu theo tên lớp trong phần mềm CAM như khi dùng ABF.
+- Tên lớp được đổi sang chữ hoa không dấu, dấu cách thành `_` (DXF R12 không nhận dấu).
+- Nét kéo quá mép tấm được cắt theo mép tấm; lỗ tròn có tâm ngoài tấm bị bỏ và có cảnh báo.
+- Tấm được kéo dài bằng scale: lỗ tròn giữ đường kính gốc, chỉ dời tâm theo tấm.
+- Chưa đưa vào DXF, có cảnh báo từng tấm: lỗ khoan cạnh, rãnh ABF tự tính khi xuất (như rãnh hậu).
+- Sơ đồ nesting và khổ ván do ABF vẽ trong model được bỏ qua.
+
 ## Lớp trong DXF (đơn vị mm)
 
 | Lớp | Ý nghĩa |
@@ -56,10 +70,10 @@ Phần mềm CAM có thể tự sắp lại đường chạy dao, hãy đặt th
 
 File `_MAT_SAU.dxf` dành cho mặt sau, ván lật quanh cạnh dài (trục X, Y mới = rộng ván − Y).
 
-## Giới hạn của bản 0.1
+## Giới hạn hiện tại
 
 - Xếp theo hình chữ nhật bao, chưa lồng các tấm cong hoặc chữ L vào nhau.
 - Chưa đọc mặt vát, lỗ khoan ngang ở cạnh, rãnh ở cạnh. Các khối này bị bỏ qua và có cảnh báo.
-- Không đọc tem của phần mềm khác.
+- Đọc được tem ABF, chưa đọc tem của phần mềm khác.
 - Chưa tính nẹp dán cạnh, chưa xuất G-code.
 - Kéo tấm trong sơ đồ đã vẽ không làm đổi file xuất.
