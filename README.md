@@ -68,7 +68,25 @@ Xếp Ván đọc thẳng tấm ABF, không cần dán tem lại:
 
 Phần mềm CAM có thể tự sắp lại đường chạy dao, hãy đặt thứ tự theo lớp như trên.
 
-File `_MAT_SAU.dxf` dành cho mặt sau, ván lật quanh cạnh dài (trục X, Y mới = rộng ván − Y).
+## Tối ưu số ván
+
+Khung tổng hợp ghi số ván đã xếp và **số ván tối thiểu theo lý thuyết** (tính theo diện tích và các tấm
+quá nửa ván). Kết quả không thể ít hơn con số này; thực tế thường hơn 1–2 ván vì khe cắt và cắt suốt.
+
+Mức **Kỹ** tìm lâu hơn (khoảng 12 giây mỗi vật liệu) và có thể bớt ván với đơn hàng lớn. Chống bay vẫn
+chạy sau khi số ván đã chốt, nên không bao giờ làm tăng số ván.
+
+## Cắt lật tấm
+
+Tấm có hốc, lỗ không thủng hoặc nét ABF ở mặt dưới được dồn vào ít ván nhất, không làm tăng tổng số ván.
+Ván phải lật có chữ **LẬT** trên sơ đồ và xuất hai file:
+
+1. `…_1_MAT_SAU.dxf`: chạy trước, khi các tấm còn liền ván. Chỉ có khoan, phay; lớp `VIEN_THAM_KHAO`
+   là viền tấm để đối chiếu, **không cắt**.
+2. Lật ván theo cách đã chọn (quanh cạnh dài hoặc cạnh ngắn), tựa lại đúng góc gốc máy.
+3. `…_2_MAT_TRUOC.dxf`: gia công mặt trước rồi cắt rời.
+
+Ván không có gia công mặt sau chỉ có một file `….dxf`.
 
 ## Giới hạn hiện tại
 
