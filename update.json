@@ -1,8 +1,8 @@
 {
-  "version": "0.1.0",
-  "url": "https://github.com/mylinkvnn-maker/xep-van/releases/download/v0.1.0/xep_van_v0.1.0.rbz",
-  "sha256": "fc127baa2cef3b890c9f037abe59a13d8b8d79694874c26e5cd69ac3268eb0e6",
-  "size": 38256,
+  "version": "0.2.0",
+  "url": "https://github.com/mylinkvnn-maker/xep-van/releases/download/v0.2.0/xep_van_v0.2.0.rbz",
+  "sha256": "36d4d5cef9a47c92bad76b6ee66dba1c1489ad65465d213d334b45c80d12c6d0",
+  "size": 44824,
   "date": "2026-11-23",
-  "notes": "Bản thử nghiệm đầu tiên.\n\n- Nesting tấm ván từ group và component, vẽ sơ đồ vào model.\n- Chống bay: tấm nhỏ và dài hẹp vào giữa, cắt trước; tấm lớn ra 4 phía, cắt sau.\n- Vân gỗ, hoa văn khóa theo tem trên tấm; màu đơn sắc tự xoay để tiết kiệm ván.\n- Xuất DXF theo lớp, danh sách CSV, tem nhãn.\n- Tự kiểm tra và cài bản cập nhật qua mạng.\n\nNên mở DXF trong phần mềm CAM và cắt thử trước khi sản xuất."
+  "notes": "Đọc model vẽ bằng ABF.\n\n- Đọc tem ABF: chiều chữ trên tem là chiều vân, mặt dán tem đặt ngửa. Tem Xếp Ván dán sau vẫn được ưu tiên.\n- Lỗ khoan, chén bản lề, rãnh, hạ nền nằm trên mặt tấm ABF được đưa vào DXF, giữ nguyên tên lớp của ABF\n  để dùng lại bảng gán dao trong phần mềm CAM.\n- Nét ABF kéo quá mép tấm được cắt theo mép, để sau khi xếp không cắt vào tấm bên cạnh.\n- Tấm ABF kéo dài bằng scale: lỗ khoan giữ nguyên đường kính gốc, chỉ dời tâm theo tấm.\n- Tấm chưa được ABF đánh dấu nhưng có group khoan ABF bên trong cũng được đọc nét.\n- Lỗ khoan cạnh và rãnh ABF tự tính lúc xuất (như rãnh hậu) chưa đưa vào DXF, có cảnh báo từng tấm.\n- Không đọc nhầm sơ đồ nesting, khổ ván của ABF và các group phụ trong tấm (tem, nét đánh dấu) thành tấm cần cắt.\n- Group phẳng không có độ dày (tem, chữ, sơ đồ 2D của công cụ khác) được bỏ qua, chỉ báo tổng số."
 }
