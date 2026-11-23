@@ -1,8 +1,8 @@
 {
-  "version": "0.2.0",
-  "url": "https://github.com/mylinkvnn-maker/xep-van/releases/download/v0.2.0/xep_van_v0.2.0.rbz",
-  "sha256": "36d4d5cef9a47c92bad76b6ee66dba1c1489ad65465d213d334b45c80d12c6d0",
-  "size": 44824,
+  "version": "0.3.0",
+  "url": "https://github.com/mylinkvnn-maker/xep-van/releases/download/v0.3.0/xep_van_v0.3.0.rbz",
+  "sha256": "487b0c76c38ffe5e62e7f366102628f53c95f11370daf0400a7853839445b396",
+  "size": 47058,
   "date": "2026-11-23",
-  "notes": "Đọc model vẽ bằng ABF.\n\n- Đọc tem ABF: chiều chữ trên tem là chiều vân, mặt dán tem đặt ngửa. Tem Xếp Ván dán sau vẫn được ưu tiên.\n- Lỗ khoan, chén bản lề, rãnh, hạ nền nằm trên mặt tấm ABF được đưa vào DXF, giữ nguyên tên lớp của ABF\n  để dùng lại bảng gán dao trong phần mềm CAM.\n- Nét ABF kéo quá mép tấm được cắt theo mép, để sau khi xếp không cắt vào tấm bên cạnh.\n- Tấm ABF kéo dài bằng scale: lỗ khoan giữ nguyên đường kính gốc, chỉ dời tâm theo tấm.\n- Tấm chưa được ABF đánh dấu nhưng có group khoan ABF bên trong cũng được đọc nét.\n- Lỗ khoan cạnh và rãnh ABF tự tính lúc xuất (như rãnh hậu) chưa đưa vào DXF, có cảnh báo từng tấm.\n- Không đọc nhầm sơ đồ nesting, khổ ván của ABF và các group phụ trong tấm (tem, nét đánh dấu) thành tấm cần cắt.\n- Group phẳng không có độ dày (tem, chữ, sơ đồ 2D của công cụ khác) được bỏ qua, chỉ báo tổng số."
+  "notes": "Tối ưu số ván và cắt lật tấm.\n\n- Báo số ván tối thiểu theo lý thuyết cạnh số ván đã xếp, để biết còn hơn bao nhiêu ván.\n- Mức tối ưu \"Kỹ\": tìm lâu hơn (khoảng 12 giây mỗi vật liệu), thêm cách xếp lấp đầy từng ván và dồn tấm khỏi ván thưa nhất.\n- Tấm có gia công mặt sau được dồn vào ít ván nhất mà không tăng tổng số ván. Sơ đồ đánh dấu ván \"LẬT\".\n- Ván phải lật xuất hai file theo thứ tự chạy: `_1_MAT_SAU` (chạy trước, chỉ khoan và phay, không cắt rời),\n  lật ván, rồi `_2_MAT_TRUOC` (gia công mặt trước và cắt rời). Ván không lật vẫn một file như cũ.\n- Chọn lật ván quanh cạnh dài hoặc cạnh ngắn. File mặt sau có viền tấm ở lớp `VIEN_THAM_KHAO` để đối chiếu, không cắt."
 }
