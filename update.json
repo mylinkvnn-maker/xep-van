@@ -1,8 +1,8 @@
 {
-  "version": "0.5.0",
-  "url": "https://github.com/mylinkvnn-maker/xep-van/releases/download/v0.5.0/xep_van_v0.5.0.rbz",
-  "sha256": "5e19e303620cee939c6e80286e68335b7aefbddcc32fac7d3bff67e4e95e933c",
-  "size": 55155,
+  "version": "0.5.1",
+  "url": "https://github.com/mylinkvnn-maker/xep-van/releases/download/v0.5.1/xep_van_v0.5.1.rbz",
+  "sha256": "902539b4a66510ea6cad15f2a7cc88c0b37b81f1233ff8b50f9edcf477b88f07",
+  "size": 56752,
   "date": "2026-11-24",
-  "notes": "Lồng tấm vào tấm khoét, chọn dao và cách mép.\n\n- Tấm chữ L, góc cong, khuyết: tấm nhỏ được lồng vào khoảng trống trong chữ nhật bao của nó, cách đường bao\n  ít nhất một đường kính dao, đúng chiều vân. Đơn thử 271 tấm: 18 tấm được lồng, ván cuối nhóm 18 mm từ 70% còn khoảng 30%.\n- Thông số có ô chọn dao 3, 4, 5, 6, 8 mm (khe giữa các tấm) và ô chọn khoảng cách mép ván 0–30 mm.\n- Tấm khuyết nhiều ghi tên vào phần thịt tấm, không đè lên tấm lồng."
+  "notes": "Tem nhãn tấm.\n\n- Sơ đồ vẽ tem trên từng tấm: mã · thứ tự cắt, tên, kích thước. Tấm nhỏ bớt dòng, tấm dài đứng thì tem xoay dọc.\n  Ẩn hoặc hiện tem bằng lớp `TEM_NHAN` trên hàng lớp đường dao.\n- Nút **In tem nhãn**: mở tem 70 × 40 mm trong trình duyệt để in ngay, không cần xuất file.\n- Tem in có thứ tự cắt, hình dáng tấm và mũi tên chiều vân, xếp theo ván rồi thứ tự cắt.\n- Vẽ vào model: chữ trên tấm có thêm tên và kích thước."
 }
