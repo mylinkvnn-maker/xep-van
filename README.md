@@ -84,6 +84,20 @@ Mỗi màu và độ dày là một nhóm riêng, xếp trên ván riêng.
 tấm nhỏ hơn được lồng vào khoảng trống đó (lớn trước), cách đường bao tấm chủ ít nhất một đường kính dao,
 rồi đi theo tấm chủ như một khối. Tấm có vân vẫn đúng chiều vân.
 
+## Xoay tấm
+
+Ô **Xoay tấm để tiết kiệm ván**:
+
+| Chọn | Cách xoay |
+|---|---|
+| Theo vân | Đơn sắc xoay 90°, vân gỗ giữ chiều |
+| Xoay 90° mọi tấm | Bỏ khóa vân; tấm đã chọn chiều vân bằng tay vẫn giữ |
+| Xoay mọi tấm, cả góc lệch | Thêm góc lệch cho tấm cong, tấm chéo nếu chữ nhật bao nhỏ đi từ 5% |
+
+Ở cả ba cách, tấm khoét (chữ L, chữ U, góc cong) được thử ghép cặp: một tấm xoay 180° móc vào chỗ khuyết
+của tấm kia, cách nhau ít nhất một đường kính dao. Xoay 180° không đổi chiều vân. Xếp Ván luôn so với cách
+xếp không xoay, ghép và lấy cách ít ván hơn.
+
 ## Dao cắt và cách mép ván
 
 - **Dao cắt:** chọn dao 3, 4, 5, 6 hoặc 8 mm. Đường kính dao là khe giữa hai tấm kề nhau.
