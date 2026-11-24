@@ -1,8 +1,8 @@
 {
-  "version": "0.4.0",
-  "url": "https://github.com/mylinkvnn-maker/xep-van/releases/download/v0.4.0/xep_van_v0.4.0.rbz",
-  "sha256": "5776fc93a940f3d35fcf0f000ce558b82d6729d150cb9782e1f139272c20ed33",
-  "size": 51508,
-  "date": "2026-11-23",
-  "notes": "Lấp khe tốt hơn và hiện đường dao.\n\n- Thêm cách xếp theo dải: mỗi dải chọn tấm bằng bài toán cái túi cho kín chiều dài ván, hợp với đơn tủ nhiều tấm cùng cỡ.\n  Chạy cả ở mức Nhanh.\n- Sau khi xếp, thử dỡ hẳn ván thưa nhất bằng cách nhét tấm của nó vào khe các ván khác. Không bớt được ván\n  thì dồn tấm từ ván thưa sang khe ván đặc, để khe các ván đầu được lấp và phần thừa gom về ván cuối thành đầu thừa lớn.\n- Sơ đồ hiện mọi đường dao theo đúng tên lớp sẽ xuất DXF (lỗ, chén, rãnh, hạ nền, nét ABF, cắt biên, cắt tấm nhỏ),\n  mỗi lớp một màu, bấm để ẩn hoặc hiện từng lớp. Nét liền là mặt ngửa, nét đứt là mặt sau.\n- Vẽ vào model: đường dao nằm trên tag cùng tên lớp DXF (mặt sau thêm tiền tố `MAT_SAU_`), bật tắt được trong SketchUp.\n- Sơ đồ chia theo nhóm màu và độ dày, mỗi nhóm có tiêu đề với số ván, số ván tối thiểu và tỉ lệ sử dụng."
+  "version": "0.5.0",
+  "url": "https://github.com/mylinkvnn-maker/xep-van/releases/download/v0.5.0/xep_van_v0.5.0.rbz",
+  "sha256": "5e19e303620cee939c6e80286e68335b7aefbddcc32fac7d3bff67e4e95e933c",
+  "size": 55155,
+  "date": "2026-11-24",
+  "notes": "Lồng tấm vào tấm khoét, chọn dao và cách mép.\n\n- Tấm chữ L, góc cong, khuyết: tấm nhỏ được lồng vào khoảng trống trong chữ nhật bao của nó, cách đường bao\n  ít nhất một đường kính dao, đúng chiều vân. Đơn thử 271 tấm: 18 tấm được lồng, ván cuối nhóm 18 mm từ 70% còn khoảng 30%.\n- Thông số có ô chọn dao 3, 4, 5, 6, 8 mm (khe giữa các tấm) và ô chọn khoảng cách mép ván 0–30 mm.\n- Tấm khuyết nhiều ghi tên vào phần thịt tấm, không đè lên tấm lồng."
 }
