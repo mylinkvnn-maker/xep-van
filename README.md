@@ -80,6 +80,15 @@ Cả hai mức đều thử xếp theo dải (hợp với tấm cùng cỡ), r�
 Không bớt được ván thì tấm được dồn về các ván đầu, phần thừa gom về ván cuối thành đầu thừa lớn.
 Mỗi màu và độ dày là một nhóm riêng, xếp trên ván riêng.
 
+**Lồng tấm vào tấm khoét:** tấm chữ L, góc cong, khuyết có khoảng trống trong chữ nhật bao. Trước khi xếp,
+tấm nhỏ hơn được lồng vào khoảng trống đó (lớn trước), cách đường bao tấm chủ ít nhất một đường kính dao,
+rồi đi theo tấm chủ như một khối. Tấm có vân vẫn đúng chiều vân.
+
+## Dao cắt và cách mép ván
+
+- **Dao cắt:** chọn dao 3, 4, 5, 6 hoặc 8 mm. Đường kính dao là khe giữa hai tấm kề nhau.
+- **Cách mép ván:** chọn 0 đến 30 mm, phần mép ván bỏ đi (mép sứt, mép không thẳng).
+
 ## Lớp đường dao trên sơ đồ
 
 Sơ đồ hiện mọi nét gia công với đúng tên lớp sẽ có trong DXF, mỗi lớp một màu. Bấm vào tên lớp ở hàng
@@ -100,7 +109,8 @@ Ván không có gia công mặt sau chỉ có một file `….dxf`.
 
 ## Giới hạn hiện tại
 
-- Xếp theo hình chữ nhật bao, chưa lồng các tấm cong hoặc chữ L vào nhau.
+- Tấm lồng chỉ vào chỗ khuyết ở mép tấm chủ (trong chữ nhật bao), chưa vào lỗ khoét thủng bên trong tấm.
+  Tấm chủ đã chứa tấm lồng thì không bị lồng tiếp vào tấm khác.
 - Chưa đọc mặt vát, lỗ khoan ngang ở cạnh, rãnh ở cạnh. Các khối này bị bỏ qua và có cảnh báo.
 - Đọc được tem ABF, chưa đọc tem của phần mềm khác.
 - Chưa tính nẹp dán cạnh, chưa xuất G-code.
