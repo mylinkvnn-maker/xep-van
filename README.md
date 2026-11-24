@@ -89,6 +89,12 @@ rồi đi theo tấm chủ như một khối. Tấm có vân vẫn đúng chiề
 - **Dao cắt:** chọn dao 3, 4, 5, 6 hoặc 8 mm. Đường kính dao là khe giữa hai tấm kề nhau.
 - **Cách mép ván:** chọn 0 đến 30 mm, phần mép ván bỏ đi (mép sứt, mép không thẳng).
 
+## Tem nhãn
+
+- Trên sơ đồ, mỗi tấm có một tem: **mã · thứ tự cắt**, tên, kích thước. Bỏ chọn lớp `TEM_NHAN` để ẩn tem.
+- Bấm **In tem nhãn** để mở tem khổ 70 × 40 mm trong trình duyệt, bấm **In**. Tem có số ván, thứ tự cắt,
+  hình dáng tấm và mũi tên chiều vân, xếp theo ván rồi thứ tự cắt. **Xuất file** cũng lưu `tem_nhan.html`.
+
 ## Lớp đường dao trên sơ đồ
 
 Sơ đồ hiện mọi nét gia công với đúng tên lớp sẽ có trong DXF, mỗi lớp một màu. Bấm vào tên lớp ở hàng
