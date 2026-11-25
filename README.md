@@ -102,6 +102,9 @@ xếp không xoay, ghép và lấy cách ít ván hơn.
 
 - **Dao cắt:** chọn dao 3, 4, 5, 6 hoặc 8 mm. Đường kính dao là khe giữa hai tấm kề nhau.
 - **Cách mép ván:** chọn 0 đến 30 mm, phần mép ván bỏ đi (mép sứt, mép không thẳng).
+- Tấm rộng gần nửa ván (ví dụ hông tủ sâu 601 mm trên khổ 1220) chỉ đặt được hai tấm cạnh nhau khi cách mép
+  đủ nhỏ: 601 + 6 + 601 + 2 × 10 = 1228 mm, quá khổ. Khi đó dưới tiêu đề nhóm hiện **gợi ý cách mép** nhỏ hơn,
+  số ván tối thiểu khi dùng nó và nút **Xếp lại**. Chỉ chọn nếu mép ván của bạn đủ thẳng.
 
 ## Tem nhãn
 
